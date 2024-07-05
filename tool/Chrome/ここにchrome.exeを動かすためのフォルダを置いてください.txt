@@ -1,0 +1,3 @@
+以下のフォルダをコピーして置いてください。
+
+"C:\Program Files\Google\Chrome\Application"にある名前がバージョンになっているフォルダ
