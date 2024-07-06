@@ -6,19 +6,9 @@ import os
 import time
 
 def request_copilot(input_text):
-    # デスクトップのパスを取得
-    desktop_path=os.path.expanduser('~/Desktop')
-    # ドライバーの場所を指定
-    driver_path=desktop_path+R"\copilot\tool\ChromeDriver\chromedriver.exe"
-    # ブラウザの場所指定
-    browser_path=desktop_path+R"\copilot\tool\Chrome\chrome.exe"
-    
     # ウェブドライバ設定
-    options=Options()
-    options.binary_location=browser_path
-    cService=webdriver.ChromeService(executable_path=driver_path)
-    driver=webdriver.Chrome(service=cService,options=options)
-        
+    driver=webdriver.Chrome()
+
     # 起動したいサイトのURLを入力
     driver.get('https://copilot.microsoft.com/')
     
