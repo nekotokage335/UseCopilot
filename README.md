@@ -2,7 +2,7 @@
 Copilotに質問したいことをファイルに書いて、RequestCopilot.pyを実行すると、自動で質問を行ってくれます。 
  
 具体的には以下のような動きです。 
-* data/input.txtに質問したいことを書きます。質問したいことが複数個ある場合は改行して書きます。(1行につき1個の質問を書く形です。)
+* data/input/input.txtに質問したいことを書きます。質問したいことが複数個ある場合は改行して書きます。(1行につき1個の質問を書く形です。)
 * RequestCopilot.pyを実行するとdata/input/input.txtの質問を読み取り、1行ずつCopilotに送信していきます。Copilotへの送信は、Seleniumを使用してGoogleChromeを操作することで実行されます。
 * Copilotからの返答はdata/output/output_yyyymmddss.txtに記録されます。(yyyymmddssはRequestCopilot.pyが実行された時間が入ります。)
 
